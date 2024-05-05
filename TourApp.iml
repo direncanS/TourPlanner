@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="AdditionalModuleElements">
+    <content url="file://$MODULE_DIR$" dumb="true">
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+    </content>
+  </component>
+  <component name="FacetManager">
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="com:example:tourapp:hibernate-annotation.cfg.xml" value="e826bd7e-adb2-45f3-aa26-6b7cec677a0a" />
+          <unit-entry name="com:example:tourapp:hibernate.cfg.xml" value="9aeb71d8-22d8-473d-85be-d169050ee293" />
+        </datasource-map>
+        <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/com/example/tourapp/hibernate-annotation.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/com/example/tourapp/hibernate.cfg.xml" />
+      </configuration>
+    </facet>
+  </component>
+</module>
