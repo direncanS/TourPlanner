@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1080.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tourapp.ViewModel.editTourLog">
+   <top>
+      <Pane prefHeight="59.0" prefWidth="1080.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="21.0" layoutY="16.0" text="Tour App" textFill="#190981">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane fx:id="outerPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="20.0" layoutY="497.0" mnemonicParsing="false" onAction="#back" prefHeight="43.0" prefWidth="185.0" style="-fx-background-color: white; -fx-border-color: #190981; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="Back" textFill="#190981">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button layoutX="872.0" layoutY="496.0" mnemonicParsing="false" onAction="#saveChanges" prefHeight="45.0" prefWidth="188.0" style="-fx-background-color: white; -fx-border-color: #190981; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="Update Changes" textFill="#190981">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Label layoutX="20.0" layoutY="14.0" text="Edit Tour Log" textFill="#190981">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="72.0" text="Difficulty" textFill="#190981">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="359.0" text="Comment" textFill="#190981">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="166.0" text="Total Time" textFill="#190981">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="315.0" text="Rating" textFill="#190981">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="218.0" text="Total Distance (km)" textFill="#190981">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="267.0" text="Date / Time" textFill="#190981">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="difficulty" layoutX="169.0" layoutY="68.0" prefHeight="29.0" prefWidth="313.0" style="-fx-background-color: white; -fx-border-color: #190981; -fx-background-radius: 10; -fx-border-radius: 10;" />
+            <TextArea fx:id="comment" layoutX="171.0" layoutY="359.0" prefHeight="87.0" prefWidth="883.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #190981; -fx-border-radius: 5;" />
+            <TextField fx:id="totalTime" layoutX="169.0" layoutY="162.0" prefHeight="29.0" prefWidth="313.0" style="-fx-background-color: white; -fx-border-color: #190981; -fx-background-radius: 10; -fx-border-radius: 10;" />
+            <ChoiceBox fx:id="rating" layoutX="169.0" layoutY="311.0" prefHeight="25.0" prefWidth="313.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #190981; -fx-border-radius: 10;" />
+            <TextField fx:id="totalDistance" layoutX="169.0" layoutY="212.0" prefHeight="29.0" prefWidth="313.0" style="-fx-background-color: white; -fx-border-color: #190981; -fx-background-radius: 10; -fx-border-radius: 10;" />
+            <DatePicker fx:id="dateTime" layoutX="169.0" layoutY="264.0" prefHeight="27.0" prefWidth="314.0" style="-fx-background-color: white; -fx-border-color: #190981; -fx-border-radius: 5;" />
+            <Label layoutX="23.0" layoutY="120.0" text="Tour" textFill="#190981">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="tour" layoutX="170.0" layoutY="117.0" prefHeight="25.0" prefWidth="313.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #190981; -fx-border-radius: 10;" />
+         </children></Pane>
+   </center>
+   
+</BorderPane>

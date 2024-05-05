@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1080.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tourapp.ViewModel.tourLogList">
+   <top>
+      <Pane prefHeight="59.0" prefWidth="1080.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="943.0" layoutY="14.0" mnemonicParsing="false" onAction="#addTourLog" prefHeight="32.0" prefWidth="117.0" style="-fx-background-color: white; -fx-border-color: #190981; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="Add Tour Log" textFill="#190981" />
+            <Button layoutX="815.0" layoutY="14.0" mnemonicParsing="false" onAction="#showTours" prefHeight="32.0" prefWidth="117.0" style="-fx-background-color: white; -fx-border-color: #190981; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="Tours" textFill="#190981" />
+            <Label layoutX="21.0" layoutY="16.0" text="Tour App" textFill="#190981">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="search" layoutX="296.0" layoutY="17.0" prefHeight="27.0" prefWidth="230.0" promptText="Search" style="-fx-background-color: white; -fx-border-color: #190981; -fx-background-radius: 10; -fx-border-radius: 10;" />
+            <Button fx:id="searchBtn" layoutX="528.0" layoutY="17.0" mnemonicParsing="false" onAction="#filterResults" prefHeight="27.0" prefWidth="59.0" style="-fx-background-color: white; -fx-border-color: #190981; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="Search" textFill="#190981" />
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane fx:id="outerPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   
+</BorderPane>

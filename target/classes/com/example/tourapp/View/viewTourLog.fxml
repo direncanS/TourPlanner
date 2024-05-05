@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1080.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tourapp.ViewModel.viewTourLog">
+   <top>
+      <Pane prefHeight="59.0" prefWidth="1080.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="21.0" layoutY="16.0" text="Tour App" textFill="#190981">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane fx:id="outerPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="20.0" layoutY="497.0" mnemonicParsing="false" onAction="#back" prefHeight="43.0" prefWidth="185.0" style="-fx-background-color: white; -fx-border-color: #190981; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="Back" textFill="#190981">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Label layoutX="20.0" layoutY="14.0" text="Tour Log Details" textFill="#190981">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="72.0" text="Difficulty" textFill="#190981">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="359.0" text="Comment" textFill="#190981">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="166.0" text="Total Time" textFill="#190981">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="315.0" text="Rating" textFill="#190981">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="218.0" text="Total Distance (km)" textFill="#190981">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="267.0" text="Date / Time" textFill="#190981">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="120.0" text="Tour" textFill="#190981">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="difficulty" layoutX="205.0" layoutY="72.0" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="tour" layoutX="205.0" layoutY="120.0" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalTime" layoutX="205.0" layoutY="166.0" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalDistance" layoutX="205.0" layoutY="218.0" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateTime" layoutX="205.0" layoutY="267.0" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="rating" layoutX="205.0" layoutY="315.0" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="comment" alignment="TOP_LEFT" layoutX="205.0" layoutY="359.0" prefHeight="71.0" prefWidth="850.0" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </center>
+   
+</BorderPane>
